@@ -1,0 +1,4 @@
+You may use the below link published in Checkmarx portal to copy or branch Checkmarx projects:
+https://checkmarx.atlassian.net/wiki/pages/viewpage.action?pageId=55410899
+The document is pretty explanatory
+PS : Branching project doesn't make SCM compulsory to be provided where as copying the project needs SCM to be provided

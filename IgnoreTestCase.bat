@@ -1,0 +1,33 @@
+set FROM=@RunWith(Arquillian.class)
+set TO_SET=import org.junit.Ignore;\n\n@Ignore\n%FROM%
+set workspace=C:\Users\c5228093\git\com.sap.translationservice
+set ngg_workspace=%workspace%\com.sap.translationservice.ngg.it
+
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\mltr\it\tests\CreateProjectMLTRTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\mltr\it\tests\CreateProjectMLTRTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\mltr\it\tests\IgnoredUpdateProjectMLTRTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\mltr\it\tests\IgnoredUpdateProjectMLTRTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\mltr\it\tests\UpdateProjectMLTRTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\mltr\it\tests\UpdateProjectMLTRTest.java
+
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\multiFile\tests\MultiFileGistTranslationTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\multiFile\tests\MultiFileGistTranslationTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\multiFile\tests\MultiFileSCM2STHTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\multiFile\tests\MultiFileSCM2STHTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\multiFile\tests\MultiFileSTH2SCMTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\multiFile\tests\MultiFileSTH2SCMTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\multiFile\tests\MultiGistUpdatedTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\multiFile\tests\MultiGistUpdatedTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\multiFile\tests\MultiSCM2STHUpdatedTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\multiFile\tests\MultiSCM2STHUpdatedTest.java
+
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\tests\GistTranslationTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\tests\GistTranslationTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\tests\GistWithUpdatePropFileTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\tests\GistWithUpdatePropFileTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\tests\LanguageServiceTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\tests\LanguageServiceTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\tests\SCM2STHTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\tests\SCM2STHTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\tests\SCM2STHUpdatedPropFileTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\tests\SCM2STHUpdatedPropFileTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\tests\STH2SCMTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\tests\STH2SCMTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\tests\STH2SCMTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\tests\CommentTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\tests\STH2SCMTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\it\tests\HQOnlySTH2SCMTest.java
+
+
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\ws\tests\CreateProjectWSTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\ws\tests\CreateProjectWSTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\ws\tests\DeleteProjectWSTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\ws\tests\DeleteProjectWSTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\ws\tests\GetEditTranslationsWSTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\ws\tests\GetEditTranslationsWSTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\ws\tests\SaveEditTranslationsWSTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\ws\tests\SaveEditTranslationsWSTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\ws\tests\UpdateAppNameTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\ws\tests\UpdateAppNameTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\ws\tests\UpdateProjectWSTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\ws\tests\UpdateProjectWSTest.java
+find "@Ignore" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\ws\tests\UserServiceWSTest.java 1>nul || C:\Software\GnuWin32\bin\sed.exe -i "s/%FROM%/%TO_SET%/g" %ngg_workspace%\src\test\java\com\sap\translationservice\ngg\ws\tests\UserServiceWSTest.java
+

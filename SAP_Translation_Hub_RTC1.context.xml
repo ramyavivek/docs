@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context>
+	<contact>
+		<name>Kerstin Saelzer</name>
+		<email>kerstin.saelzer@sap.com</email>
+	</contact>
+	<repository id="1" description="com.sap.translationservice">
+		<type>git</type>
+		<host>git.wdf.sap.corp/com.sap.translationservice.git</host>
+		<paths id="1" cat="src" description="git:ssh">
+			<access>
+				<protocol>ssh</protocol>
+				<port>29418</port>
+			</access>
+			<path ver="1.10.0-SNAPSHOT">/com.sap.translationservice.common.rest/</path>
+			<path ver="1.10.0-SNAPSHOT">/com.sap.translationservice.service.rest.model/</path>
+			<path ver="1.10.0-SNAPSHOT">/com.sap.translationservice.tw.core/</path>
+			<path ver="1.10.0-SNAPSHOT">/com.sap.translationservice.service.rest/</path>
+			<path ver="1.10.0-SNAPSHOT">/com.sap.translationservice.service.web.extern/</path>
+			<path ver="1.10.0-SNAPSHOT">/com.sap.translationservice.service.mltr.extern/</path>
+		</paths>
+	</repository>
+	
+	<repository id="2" description="STH DU">
+		<type>hana_repo</type>
+		<host>lddbi0g.wdf.sap.corp</host>
+		<port>30015</port>
+		<paths id="1" cat="src" description="has downloadable url">
+		
+		<path owner="Dumitru, Marius" ver="latest">/sap/lqe/</path>
+		<path owner="Dumitru, Marius" ver="latest">/sap/translsvc/</path>
+		</paths>
+	</repository>
+	
+	<dependency id="3" description="integrated components">
+        <import id="1" description="LQE">//depot/Internal_Applications/ReleaseManagement/CodeScanner/contexts/Cloud3.IND/LQE.context.xml</import>
+        <import id="2" description="HLT">//depot/Internal_Applications/ReleaseManagement/CodeScanner/contexts/Cloud3.IND/HLT.context.xml</import>
+	<import id="3" description="SLS Converter Service">//depot/Internal_Applications/ReleaseManagement/CodeScanner/contexts/Cloud3.IND/SLS_Converter_Service.context.xml</import>
+    </dependency>
+</context>
